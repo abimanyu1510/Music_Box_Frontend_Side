@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const baseURL = "https://music-box-server-side.onrender.com//";
- 
+const baseURL = "https://music-box-server-side.onrender.com/";
+
 export const validateUser = async (token) => {
   try {
     const res = await axios.get(`${baseURL}api/users/login`, {
